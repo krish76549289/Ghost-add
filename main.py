@@ -63,16 +63,16 @@ BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact"
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+3k-1zcJxINYwNGZl"),
-            InlineKeyboardButton(text="🛠️ Repo", url="https://github.com/nikhilsainiop/saini-txt-direct"),
+            InlineKeyboardButton(text="📱 Help", url="https://t.me/Strangerboy27_bot_strangerboy"),
+            InlineKeyboardButton(text="🤖 OWNER", url="https://t.me/Strangerboy27_bot_strangerboy"),
         ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://i.ibb.co/7xm7cXyg/STRANGER-BOY.jpg",
+    "https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg",
     # Add more image URLs as needed
 ]
 
@@ -430,7 +430,7 @@ async def start(bot, m: Message):
             f"🌟 Welcome {m.from_user.first_name}! 🌟\n\n" +
             f"Great! You are a premium member!\n"
             f"Use Command : /help to get started 🌟\n\n"
-            f"If you face any problem contact -  [{CREDIT}](https://t.me/saini_contact_bot)\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
+            f"If you face any problem contact -  [{CREDIT}](https://t.me/Strangerboy27_bot_strangerboy\n", disable_web_page_preview=True, reply_markup=BUTTONSCONTACT
         )
     else:
         await asyncio.sleep(2)
@@ -510,34 +510,36 @@ async def info(bot: Client, update: Message):
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        f"💥 𝐁𝐎𝐓𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
-        f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
-        f"➥ /start – Bot Status Check\n"
-        f"➥ /drm – Extract from .txt (Auto)\n"
-        f"➥ /y2t – YouTube → .txt Converter\n"  
-        f"➥ /ytm – YT .txt → .mp3 downloader\n"  
-        f"➥ /yt2m – YT link → .mp3 downloader\n"  
-        f"➥ /t2t – Text → .txt Generator\n" 
-        f"➥ /stop – Cancel Running Task\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n" 
-        f"⚙️ 𝗧𝗼𝗼𝗹𝘀 & 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀: \n\n" 
-        f"➥ /cookies – Update YT Cookies\n" 
-        f"➥ /id – Get Chat/User ID\n"  
-        f"➥ /info – User Details\n"  
-        f"➥ /logs – View Bot Activity\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"👤 𝐔𝐬𝐞𝐫 𝐀𝐮𝐭𝐡𝐞𝐧𝐭𝐢𝐜𝐚𝐭𝐢𝐨𝐧: **(OWNER)**\n\n" 
-        f"➥ /addauth xxxx – Add User ID\n" 
-        f"➥ /rmauth xxxx – Remove User ID\n"  
-        f"➥ /users – Total User List\n"  
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-        f"💡 𝗡𝗼𝘁𝗲:\n\n"  
-        f"• Send any link for auto-extraction\n"  
-        f"• Supports batch processing\n\n"  
-        f"╭────────⊰◆⊱────────╮\n"   
-        f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : {CREDIT} 💻\n"
-        f"╰────────⊰◆⊱────────╯\n"
+f"👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"
+f"⚠️ *Authorized Access Only* – Owner: `{CREDIT}`\n"
+f"⛧═════════════════════════⛧\n\n"
+
+f"🔰 /start – System Pulse Check\n"
+f"🎯 /drm – Decode .txt Links (Auto)\n"
+f"📥 /y2t – YouTube → Text Resolver\n"
+f"🎧 /ytm – Extract Audio via .txt\n"
+f"📡 /yt2m – Stream → .mp3\n"
+f"📄 /t2t – Generate .txt File\n"
+f"🛑 /stop – Kill Running Process\n\n"
+
+f"⛧══════════ TOOLS ⛧══════════\n"
+f"🧪 /cookies – Inject Cookies\n"
+f"🆔 /id – Extract User/Chat ID\n"
+f"🧠 /info – Identity Lookup\n"
+f"📂 /logs – View Blackbox Logs\n\n"
+
+f"⛧═════ OWNER OVERRIDE ═════⛧\n"
+f"🛡️ /addauth <id> – Whitelist User\n"
+f"🧨 /rmauth <id> – Blacklist User\n"
+f"📊 /users – Display All Agents\n\n"
+
+f"⛧═════ AUTO MODE ═════⛧\n"
+f"☣️ Send Any Supported Link\n"
+f"⚙️ Batch Decryption Supported\n\n"
+
+f"🔐 SYSTEM ENGINE: `STRANGER-AI` v2.1\n"
+f"👨‍💻 Powered By: {CREDIT}\n"
+f"⛧═════════════════════════⛧"
         )
     )                    
           
@@ -826,12 +828,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
-                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                cc = f'⛧═════ Vid Id 🌀 {str(count).zfill(3)} ═════⛧\n**👨‍💻 Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
+                cc1 = f'⛧═════ Pdf Id 🌀 {str(count).zfill(3)} ═════⛧\n**💳 File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/ZRvCxd5g/STRANGER-BOY.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
+                cczip = f'⛧═════ Zip Id 🌀 {str(count).zfill(3)} ═════⛧\n**👝 Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"' 
+                ccimg = f'⛧═════ Img Id 🌀 {str(count).zfill(3)} ═════⛧\n**📊 Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
+                ccm = f'⛧═════ Audio Id 🌀 {str(count).zfill(3)} ═════⛧\n**🎧 Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
+                cchtml = f'⛧═════ Html Id 🌀 {str(count).zfill(3)} ═════⛧\n**📮 Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**👨‍💻 Powered By:══➤**[{CR}](https://i.ibb.co/9m20Ys7k/photo-2025-06-22-13-16-36-7518790252551471136.jpg)\n👾 𝗦𝗧𝗥𝗔𝗡𝗚𝗘𝗥.𝗔𝗜 | 💻 𝗘𝗫𝗣𝗟𝗢𝗜𝗧 𝗦𝗬𝗦𝗧𝗘𝗠\n"'
                   
                 if "drive" in url:
                     try:
