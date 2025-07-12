@@ -87,12 +87,15 @@ async def progress_bar(current, total, reply, start): #NIKHIL SAINI BOTS
             remaining_length = bar_length - completed_length #NIKHIL SAINI BOTS
 
             symbol_pairs = [ #NIKHIL SAINI BOTS
-                ("▬", "▭"), #NIKHIL SAINI BOTS
-                #("✅", "☑️"), #NIKHIL SAINI BOTS
-                #("🐬", "🦈"), #NIKHIL SAINI BOTS
-                #("💚", "💛"), #NIKHIL SAINI BOTS
-                #("🌟", "⭐"), #NIKHIL SAINI BOTS
-                ("▰", "▱") #NIKHIL SAINI BOTS
+        ('█', '░'),  # classic
+        ('▰', '▱'),  # bold box
+        ('▪', '▫'),  # small square
+        ('■', '□'),  # heavy square
+        ('⣿', '⠿'),  # braille style
+        ('◼', '◻'),  # circular block
+        ('⧈', '⧇'),  # sci-fi symbols
+        ('▓', '░'),  # shaded classic
+        ('⬛', '⬜'),  # emoji blocks
             ] #NIKHIL SAINI BOTS
             chosen_pair = random.choice(symbol_pairs) #NIKHIL SAINI BOTS
             completed_symbol, remaining_symbol = chosen_pair #NIKHIL SAINI BOTS
@@ -101,6 +104,17 @@ async def progress_bar(current, total, reply, start): #NIKHIL SAINI BOTS
 
             try: #NIKHIL SAINI BOTS
                 #await reply.edit(f'`╭──⌯═════𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠══════⌯──╮\n├⚡ {progress_bar}\n├⚙️ Progress ➤ | {perc} |\n├🚀 Speed ➤ | {sp} |\n├📟 Processed ➤ | {cur} |\n├🧲 Size ➤ | {tot} |\n├🕑 ETA ➤ | {eta} |\n╰─═══✨🦋𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🦋✨═══─╯`') 
-                await reply.edit(f'`╭──⌯═════𝐁𝐨𝐭 𝐒𝐭𝐚𝐭𝐢𝐜𝐬══════⌯──╮\n├⚡ {progress_bar}\n├⚙️ Progress ➤ | {perc} |\n├🚀 Speed ➤ | {sp} |\n├📟 Processed ➤ | {cur} |\n├🧲 Size ➤ | {tot} |\n├🕑 ETA ➤ | {eta} |\n╰─═══✨🦋{CREDIT}🦋✨═══─╯`') 
+                await reply.edit(f'🧬═══════════[ STRANGER  SYSTEM – 2050 ]═══════════🧬\n'
+                    f'┃ 🛰 MODULE       : ⌈ DATA UPLINK CORE vX.1 ⌋\n'
+                    f'┃ 🔁 STATUS       : TRANSMITTING PAYLOAD\n'
+                    f'┃ ⚙️ ENGINE LOAD  : {progress_bar_display}\n'
+                    f'┃ 📶 COMPLETION   : {perc}\n'
+                    f'┃ 🚀 THROUGHPUT   : {sp}\n'
+                    f'┃ 📂 TRANSFERRED  : {cur}\n'
+                    f'┃ 💾 TOTAL SIZE   : {tot}\n'
+                    f'┃ ⏱️ EST. TIME     : {eta}\n'
+                    f'┃ 🤖 POWER SOURCE : {CREDIT}\n'
+                    f'🧬═════════════════════════════════════════════════🧬'
+                                )
             except FloodWait as e: #NIKHIL SAINI BOTS
                 time.sleep(e.x) #NIKHIL SAINI BOTS 
