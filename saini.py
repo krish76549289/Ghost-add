@@ -12,7 +12,6 @@ import tgcrypto
 import subprocess
 import concurrent.futures
 from math import ceil
-from utils import progress_bar
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from io import BytesIO
